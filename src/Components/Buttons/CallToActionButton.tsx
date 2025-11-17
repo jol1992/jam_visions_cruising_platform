@@ -5,5 +5,9 @@ interface CallButtonProps {
 }
 
 export const CallToActionButton: FC<CallButtonProps> = ({ label }) => {
-  return <button>{label}</button>;
+  return (
+    <div>
+      <button className="action_button">{label}</button>
+    </div>
+  );
 };
